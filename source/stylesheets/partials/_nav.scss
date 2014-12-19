@@ -1,0 +1,20 @@
+nav {
+  margin-top: em(20);
+  margin-right: em(100);
+  float: right;
+
+  li {
+    float: left;
+    margin-right: em(40);
+  }
+
+  a {
+    font-weight: 600;
+    color: $dark-gray;
+
+    &.active {
+      padding-bottom: 2px;
+      border-bottom: 3px solid $light-green; 
+    }
+  }
+}
