@@ -28,6 +28,7 @@ div.hero {
 
 .news {
     @include outer-container;
+    padding-top: em(60);
     @mixin grid-item-columns($columns) {
     width: (100% / 12) * $columns;
   }
