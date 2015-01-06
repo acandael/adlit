@@ -1,4 +1,4 @@
-section.home {
+.home {
   display: block;
   background: url(/images/background.jpg) no-repeat center center;
   opacity: 0.8;
@@ -26,7 +26,8 @@ div.hero {
   }
 }
 
-section.news {
+.news {
+    @include outer-container;
     @mixin grid-item-columns($columns) {
     width: (100% / 12) * $columns;
   }
@@ -127,7 +128,7 @@ section.news {
   }
 }
 
-section.info {
+.info {
   @include outer-container;
   @include span-columns(6);
   @include shift(1);
