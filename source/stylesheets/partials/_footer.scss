@@ -18,9 +18,10 @@ footer {
     transition-duration: 2s;
     border: 2px solid $light-green;
     &:hover {
-      transition-property: border-color;
+      transition-property: color, border-color;
       transition-duration: .5s;
-      border: 2px solid lighten($light-green, 20); 
+      color: lighten($dark-gray, 10);
+      border: 2px solid lighten($light-green, 10); 
     }
   }
 
