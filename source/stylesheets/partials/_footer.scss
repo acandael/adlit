@@ -1,0 +1,36 @@
+footer {
+  @include span-columns(4);
+  position: absolute;
+  bottom: 2em;
+  left: 35%;
+  z-index: 9999;
+
+  a {
+    margin-left: em(40);
+    font-size: $base-font-size * 1.3;
+  }
+
+  i {
+    color: $dark-gray; 
+    border-radius: 50%;
+    padding: .8em;
+    transition-property: border-color;
+    transition-duration: 2s;
+    border: 2px solid $light-green;
+    &:hover {
+      transition-property: border-color;
+      transition-duration: .5s;
+      border: 2px solid lighten($light-green, 20); 
+    }
+  }
+
+  i.fa-facebook {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  i.fa-twitter {
+    padding-left: .9em;
+    padding-right: .91em;
+  }
+}
