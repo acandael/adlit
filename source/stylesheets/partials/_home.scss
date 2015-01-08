@@ -47,7 +47,7 @@ div.cta {
 
 .news {
     @include outer-container;
-    padding-top: em(60);
+    padding-top: em(20);
     @mixin grid-item-columns($columns) {
     width: (100% / 12) * $columns;
   }
@@ -108,7 +108,7 @@ div.cta {
 
     .grid-item img {
         display: block;
-        height: 3em;
+        height: 80%;
         margin: auto;
         margin-bottom: 1em;
       }
