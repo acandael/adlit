@@ -60,7 +60,7 @@ article.team {
   }
 }
 
-footer {
+footer.team {
   @include span-columns(4);
   @include shift(5);
   padding-bottom: 40px;
