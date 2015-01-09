@@ -1,7 +1,18 @@
 ---
 title: Adlit 
 description: Een onderzoeksproject rond reclamevrijheid
+stylesheet: jquery.fullPage
 ---
+
+<nav id="home-menu">
+  <ul>
+    <li data-menuanchor="home" class="active"><a href="#home">Home</a></li>
+    <li data-menuanchor="news"><a href="#news">Nieuws</a></li>
+    <li data-menuanchor="info"><a href="#info">Project</a></li>
+    <li><a href="#">Publicaties</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
 
 <div id="fullpage">
 <div class="section home">
@@ -63,3 +74,13 @@ description: Een onderzoeksproject rond reclamevrijheid
 </div>
 </div>
 
+<script>
+ $(document).ready(function() {
+   $('#fullpage').fullpage(
+    {
+    anchors: ['home', 'news', 'info'],
+    menu: '#home-menu' 
+    }
+   );
+}); 
+</script>

@@ -13,23 +13,13 @@
     
     <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
     
-    <%= stylesheet_link_tag "normalize", "all", "jquery.fullPage" %>
+    <%= stylesheet_link_tag "normalize", "all", (data.page.stylesheet ? data.page.stylesheet : {}) %>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <%= javascript_include_tag  "all" %>
-    <script>
-     $(document).ready(function() {
-       $('#fullpage').fullpage(
-        {
-        anchors: ['home', 'news', 'info'],
-        menu: '#menu' 
-        }
-       );
-    }); 
-    </script>
+
   </head>
   
   <body class="<%= page_classes %>">
-      <%= partial "partials/nav" %>
       <%= yield %>
   </body>
 </html>

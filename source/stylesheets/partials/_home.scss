@@ -31,7 +31,7 @@ div.cta {
   @include span-columns(8);
   @include shift(5);
   position: absolute;
-  top: 70%;
+  top: 85%;
 
   p {
     font-size: $base-font-size * 1.6;
