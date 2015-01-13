@@ -1,0 +1,59 @@
+section.output {
+  @include outer-container;
+  @include span-columns(8);
+  @include shift(2);
+  padding-top: em(140);
+
+  header {
+    margin-top: em(20);
+    padding-top: em(10);
+    margin-bottom: em(20);
+    padding-bottom: em(10);
+
+    h1 {
+      text-align: center;
+      color: $base-accent-color;
+    }
+  }
+
+  .boxes {
+    padding-top: em(60);
+  }
+
+  .box {
+    @include span-columns(3 of 6);
+    @include omega(2n);
+    margin-bottom: em(80);
+    margin-right: em(40);
+
+    a {
+      color: $dark-gray;
+      &:hover {
+        border-bottom: 2px solid $light-green;
+      }
+    }
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: em(15);
+    font-size: $base-font-size * 1.6;
+  }
+
+  i {
+    font-size: 3em;
+    color: $light-green;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  ul {
+    @extend %default-ul;
+  }
+
+  li {
+    line-height: 2em;
+  }
+}
