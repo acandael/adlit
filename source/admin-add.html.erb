@@ -1,0 +1,45 @@
+<nav id="menu">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="index#news">Nieuws</a></li>
+    <li class="active"><a href="#">Team</a></li>
+    <li><a href="index#info">Project</a></li>
+    <li><a href="#">Output</a></li>
+  </ul>
+</nav>
+<section class="admin-add">
+  <div class="breadcrumb">
+    <a href="/admin.html">Beheer</a>
+    <a href="/admin-news.html">Nieuws</a>
+    <a href="#">Toevoegen</a>
+  </div>
+  <form class="admin-add">
+    <header>
+      <h1><i class="fa fa-newspaper-o"></i>Nieuws-artikel Toevoegen</h1>
+    </header>
+    <div>
+      <label>Titel:</label>
+      <input type="text" name="titel" autofocus /> 
+    </div>
+    <div>
+      <label>Tekst:</label>
+      <textarea name="tekst" rows="10" cols="50"></textarea>
+    </div>
+    <div>
+      <label>Image</label>
+      <input type="file" name="image" />
+    </div>
+    <div>
+      <label>Download</label>
+      <input type="file" name="download" />
+    </div>
+    <div>
+      <label>Link</label>
+      <input type="url" name="link" />
+    </div>
+    <div class="submit">
+      <button>Toevoegen</button>
+      <button>Annuleren</button>
+    </div>
+  </form>
+</section>
