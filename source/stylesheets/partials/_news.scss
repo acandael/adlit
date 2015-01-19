@@ -1,16 +1,9 @@
 section.news {
-  @include outer-container;
-  padding-top: em(140);
-  margin-bottom: em(100);
 
   header {
     margin-top: em(40);
     margin-bottom: em(60);
     color: $base-accent-color;
-
-    h1 {
-      text-align: center;
-    }
   }
 
   .accordion-tabs-minimal {

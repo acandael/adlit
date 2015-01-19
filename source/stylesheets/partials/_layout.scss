@@ -1,0 +1,49 @@
+section {
+  @include outer-container;
+  padding-top: em(140);
+  margin-bottom: em(80);
+}
+
+// links
+a {
+  color: $dark-gray;
+  
+  &:hover {
+    color: $dark-gray;
+  }
+
+  &.underline {
+    padding-bottom: 2px;
+    border-bottom: 2px solid $base-accent-color;
+  }
+}
+
+// titles
+h1 {
+  color: $base-accent-color;
+  text-align: center;
+}
+
+// icons
+
+i {
+  color: $light-green;
+  &.large
+  {
+    font-size: 3em;
+  }
+}
+
+.intro {
+  margin-bottom: em(100);
+  h1 {
+    margin-bottom: em(20);
+  }
+  p {
+    font-size: $base-font-size * 1.3;
+  }
+
+  header {
+    margin-bottom: em(20);
+  }
+}

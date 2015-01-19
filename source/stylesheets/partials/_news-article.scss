@@ -7,6 +7,7 @@ article.news-article {
     margin-bottom: em(40);
     p.date {
       font-style: italic;
+      color: lighten($base-font-color, 20);
     }
   }
   .content {
@@ -21,14 +22,10 @@ article.news-article {
     }
     
     a {
-      color: $dark-gray;
       font-weight: 600;
-      padding-bottom: 2px;
-      border-bottom: 2px solid $base-accent-color;
     }
 
     i {
-      color: $base-accent-color;
       margin-right: em(10);
     }
   }

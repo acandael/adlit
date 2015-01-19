@@ -7,6 +7,7 @@ footer.home {
 
   a {
     margin-right: em(20);
+    border: none;
   }
 
   i {
@@ -20,7 +21,7 @@ footer.home {
     &:hover {
       transition-property: color, border-color;
       transition-duration: .5s;
-      color: lighten($dark-gray, 15);
+      color: lighten($base-accent-color, 15);
       border: 2px solid lighten($light-green, 15); 
     }
   }

@@ -1,23 +1,4 @@
 section.project {
-  @include outer-container;
-  padding-top: em(140);
-  margin-bottom: em(80);
-  
-  .intro {
-    margin-bottom: em(100);
-
-    header {
-      margin-bottom: em(20);
-    }
-
-    h1 {
-      text-align: center;
-      color: $base-accent-color;
-    }
-    p {
-      font-size: $base-font-size * 1.3;
-    }
-  }
 
   .box {
     @include span-columns(6 of 12);
@@ -26,13 +7,8 @@ section.project {
 
     h2 {
       text-align: center;
-      font-size: $base-font-size * 1.3;
+      font-size: $base-font-size * 1.6;
       margin-bottom: em(20);
-    }
-
-    i {
-      font-size: 3em;
-      color: $base-accent-color;
     }
 
     p.icon {
@@ -41,6 +17,13 @@ section.project {
 
     ol {
       @extend %default-ol;
+      margin-top: em(20);
+      margin-bottom: em(20);
+    }
+
+    li {
+      margin-top: em(10);
+      margin-bottom: em(10);
     }
   }
 }

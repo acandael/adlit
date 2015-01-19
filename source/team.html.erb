@@ -1,24 +1,25 @@
 ---
-title: "People"
+title: "Team"
 description: "The research centre is led by prof. Jeroen Huisman and employs seven researchers and has several affiliate members."
 ---
 
 <nav id="menu">
   <ul>
     <li><a href="/">Home</a></li>
-    <li><a href="index#news">Nieuws</a></li>
+    <li><a href="/index.html#news">Nieuws</a></li>
     <li class="active"><a href="#">Team</a></li>
-    <li><a href="index#info">Project</a></li>
+    <li><a href="/project.html">Project</a></li>
     <li><a href="#">Output</a></li>
   </ul>
 </nav>
 
-<article class="team">
+<section class="team">
+  <div class="intro">
 <header>
   <h1>AdLit Team</h1>
+<p>The AdLit project is coordinated by Ghent University and unites three Flemish Universities.<br />Check out the <a href="/stakeholders.html" class="underline">Stakeholders</a></p> 
 </header>
-<p>The AdLit project is coordinated by Ghent University and unites three Flemish Universities.<br />Check out the <a href="/stakeholders.html">Stakeholders</a></p> 
-</article>
+</div>
 <div class="members">
   <div class="member" data-mh="block">
     <a href="/daniel-biltereyst.html"><img src="images/daniel-biltereyst.jpg" alt="daniël biltereyst" /></a>
@@ -81,11 +82,7 @@ description: "The research centre is led by prof. Jeroen Huisman and employs sev
     <p><a href="/film-photography-television-and-audiovisual-studies.html">Film, Photography, Television and Audiovisual Studies</a></p>
   </div>
 </div>
+</section>
 
-
-<footer class="team">
-  <a href="#"><i class="fa fa-facebook"></i></a>
-  <a href="#"><i class="fa fa-twitter"></i></a>
-  <a href="#"><i class="fa fa-envelope"></i></a>
-</footer>
+<%= partial 'partials/footer-regular' %> 
 

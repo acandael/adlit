@@ -1,10 +1,10 @@
 <nav id="menu">
   <ul>
     <li><a href="/">Home</a></li>
-    <li><a href="index#news">Nieuws</a></li>
+    <li><a href="/index.html#news">Nieuws</a></li>
     <li class="active"><a href="#">Team</a></li>
-    <li><a href="index#info">Project</a></li>
-    <li><a href="#">Publicaties</a></li>
+    <li><a href="/project.html">Project</a></li>
+    <li><a href="/output.html">Output</a></li>
   </ul>
 </nav>
 <article class="researcher">
@@ -18,7 +18,7 @@
   <header>
     <h1>Katarina Panic</h1>
   </header>
-  <section class="contact">
+  <div class="contact">
     <h2>Contact</h2>
     <p>
     <i class="fa fa-envelope"></i><a href="mailto:katarina.panic@ugent.be">katarina.panic@ugent.be</a><br />
@@ -27,15 +27,12 @@
     Departement Communicatiewetenschappen<br />
     Korte Meer 11, 9000 Gent
     </p>
-  </section>
-  <section class="affiliation">
+  </div>
+  <div class="affiliation">
     <h2>Affilation</h2>
     <p><i class="fa fa-link"></i><a href="http://www.cepec.ugent.be">www.cepec.ugent.be</a></p>
-  </section>
+  </div>
 </article>
 
-<footer class="team">
-  <a href="#"><i class="fa fa-facebook"></i></a>
-  <a href="#"><i class="fa fa-twitter"></i></a>
-  <a href="#"><i class="fa fa-envelope"></i></a>
-</footer>
+<%= partial 'partials/footer-regular' %> 
+

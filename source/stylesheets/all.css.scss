@@ -4,9 +4,14 @@
 @import 'base/base';
 @import 'neat';
 
+@import 'partials/layout';
 @import 'partials/nav';
+@import 'partials/breadcrumb';
+@import 'partials/footer-home';
+@import 'partials/footer-regular';
 
 @import 'partials/home';
+@import 'partials/news-grid';
 @import 'partials/team';
 @import 'partials/researcher-details';
 @import 'partials/stakeholders';

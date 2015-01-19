@@ -1,9 +1,7 @@
-footer.home {
-  background: none;
-  position: absolute;
-  top: 90%;
-  left: 40%;
-  z-index: 9999;
+footer.regular {
+  @include span-columns(4);
+  @include shift(5);
+  padding-bottom: 40px;
 
   a {
     margin-right: em(20);
@@ -19,15 +17,15 @@ footer.home {
     border: 2px solid $light-green;
     &:hover {
       transition-property: color, border-color;
-      transition-duration: .5s;
-      color: lighten($dark-gray, 15);
+      transition-duration: .2s;
+      color: lighten($base-accent-color, 15);
       border: 2px solid lighten($light-green, 15); 
     }
   }
 
   i.fa-facebook {
-    padding-left: .8em;
-    padding-right: .8em;
+      padding-left: .8em;
+      padding-right: .8em;
   }
 
   i.fa-twitter {
