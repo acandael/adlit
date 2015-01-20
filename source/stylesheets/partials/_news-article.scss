@@ -1,13 +1,11 @@
 article.news-article {
-  @include outer-container;
   padding-top: em(140);
   padding-bottom: em(60);
 
   header {
-    margin-bottom: em(40);
-    p.date {
-      font-style: italic;
-      color: lighten($base-font-color, 20);
+    h1 {
+      color: $dark-gray;
+      text-align: left;
     }
   }
   .content {

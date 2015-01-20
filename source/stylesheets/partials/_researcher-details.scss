@@ -1,5 +1,4 @@
 article.researcher {
-  @include outer-container;
   @include span-columns(7);
   @include shift(3);
   margin-top: em(100);
@@ -7,16 +6,21 @@ article.researcher {
 
   aside {
     float: right;
-    margin-top: em(80);
+    margin-top: em(140);
   }
 
   header {
-    margin-bottom: em(40);
+    margin-top: em(40);
+    margin-bottom: em(60);
   }
 
   img {
     margin-top: em(80);
     border-radius: 3px;
+  }
+
+  h1 {
+    text-align: left;
   }
 
   h2 {
@@ -37,7 +41,6 @@ article.researcher {
 
   i {
     margin-right: em(10);
-    color: $light-green;
   }
 }
 

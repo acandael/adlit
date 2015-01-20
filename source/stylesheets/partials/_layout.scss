@@ -4,6 +4,14 @@ section {
   margin-bottom: em(80);
 }
 
+article {
+  @include outer-container;
+}
+
+header {
+  margin-bottom: em(40);
+}
+
 // links
 a {
   color: $dark-gray;
@@ -46,4 +54,16 @@ i {
   header {
     margin-bottom: em(20);
   }
+}
+
+// text
+
+p.date {
+  text-transform: uppercase;
+  font-size: $base-font-size * .8;
+  letter-spacing: 2px;
+}
+
+p.read-more {
+  font-weight: 600;
 }

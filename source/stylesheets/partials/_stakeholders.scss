@@ -1,18 +1,11 @@
 section.stakeholders {
-  @include outer-container;
   @include span-columns(8);
   @include shift(2);
-  padding-top: em(140);
 
   header {
     margin-top: em(20);
     padding-top: em(10);
-    margin-bottom: em(20);
     padding-bottom: em(10);
-    h1 {
-      text-align: center;
-      color: $base-accent-color;
-    }
   }
 
   .boxes {
@@ -26,8 +19,8 @@ section.stakeholders {
     margin-right: em(40);
 
     a {
-      color: $dark-gray;
       &:hover {
+        padding-bottom: 2px;
         border-bottom: 2px solid $light-green;
       }
     }
@@ -39,10 +32,6 @@ section.stakeholders {
     font-size: $base-font-size * 1.6;
   }
 
-  i {
-    font-size: 3em;
-    color: $light-green;
-  }
   
   p {
     text-align: center;
@@ -53,7 +42,8 @@ section.stakeholders {
   }
 
   li {
-    line-height: 2em;
+    margin-top: em(20);
+    margin-bottom: em(20);
   }
 
 }

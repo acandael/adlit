@@ -1,5 +1,10 @@
 section.project {
 
+  .intro {
+    @include span-columns(8);
+    @include shift(2);
+  }
+
   .box {
     @include span-columns(6 of 12);
     @include omega(2n);
