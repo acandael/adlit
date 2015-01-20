@@ -1,9 +1,5 @@
 section.news {
 
-  .intro {
-    margin-top: em(100);
-  }
-
   article.news-item {
 
     @include span-columns(9 of 9);
@@ -16,12 +12,8 @@ section.news {
     }
 
 
-    i {
-      margin-right: em(5);
-    }
     
     h1 {
-      color: $dark-gray;
       font-size: $base-font-size * 1.3;
       text-align: left;
       margin-bottom: em(5);
