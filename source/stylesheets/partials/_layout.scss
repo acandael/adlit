@@ -36,9 +36,11 @@ h1 {
 
 i {
   color: $light-green;
+  margin-right: em(10);
   &.large
   {
     font-size: 3em;
+    margin-right: 0;
   }
 }
 
@@ -66,4 +68,11 @@ p.date {
 
 p.read-more {
   font-weight: 600;
+}
+
+// lists
+
+li {
+  margin-top: em(20);
+  margin-bottom: em(20);
 }

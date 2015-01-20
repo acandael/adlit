@@ -40,10 +40,4 @@ section.stakeholders {
   ul {
     @extend %default-ul;
   }
-
-  li {
-    margin-top: em(20);
-    margin-bottom: em(20);
-  }
-
 }
