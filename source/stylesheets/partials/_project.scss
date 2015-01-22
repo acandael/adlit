@@ -8,25 +8,8 @@ section.project {
     }
   }
 
-  .box {
-    @include span-columns(6 of 12);
-    @include omega(2n);
-    padding-right: em(40);
-
-    h2 {
-      text-align: center;
-      font-size: $base-font-size * 1.6;
-      margin-bottom: em(20);
-    }
-
-    p.icon {
-      text-align: center;
-    }
-
-    ol {
-      @extend %default-ol;
-      margin-top: em(20);
-      margin-bottom: em(20);
-    }
+  .video {
+    @include span-columns(10);
+    @include shift(1);
   }
 }

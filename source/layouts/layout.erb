@@ -16,7 +16,10 @@
     <%= stylesheet_link_tag "normalize", "all", (data.page.stylesheet ? data.page.stylesheet : {}) %>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <%= javascript_include_tag  "all" %>
-
+    <script src="mediaplayer/mediaelement-and-player.min.js"></script>
+    <link rel="stylesheet" href="mediaplayer/mediaelementplayer.css" />
+    <link rel="stylesheet" href="mediaplayer/mejs-skins.css">
+    
   </head>
   
   <body class="<%= page_classes %>">
