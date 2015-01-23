@@ -13,6 +13,12 @@ nav#home-menu {
       padding-bottom: 2px;
       border-bottom: 3px solid $light-green; 
     }
+
+    &.lang {
+      margin-left: em(50);
+      padding-bottom: 2em;
+    }
+
   }
 
   a {
@@ -24,6 +30,7 @@ nav#home-menu {
 
 nav#menu {
   margin-right: em(90);
+  margin-top: em(20);
   float: right;
   position: absolute;
   z-index: 9999;
@@ -36,6 +43,11 @@ nav#menu {
     &.active {
       padding-bottom: 2px;
       border-bottom: 3px solid $light-green; 
+    }
+
+    &.lang {
+      margin-left: em(50);
+      padding-bottom: 2em;
     }
   }
 
