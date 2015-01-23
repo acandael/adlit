@@ -11,7 +11,7 @@
       #3581A5, 
       #5FBEBE,
       #98C79A,
-      #A7A891, 
+      #b9cf45, 
       #BDCC97,
       #979EA0;
     $grid-item-border-size: 9px;
@@ -42,7 +42,6 @@
       }
 
       @for $i from 1 through length($grid-item-colors) { 
-  // assign colors from $grid-item-colors list
         &:nth-child(#{$i}) {
           $background-from-list: nth($grid-item-colors, $i);
           background-color: $background-from-list;
@@ -66,7 +65,7 @@
 
     .grid-item h1 {
         color: $grid-item-color;
-        font-size: 1.3em;
+        font-size: 1em;
         margin-bottom: .4em;
       }
 
@@ -78,22 +77,4 @@
         }
       }
 
-    .grid-item-big {
-      @include media($large-screen) {
-        @include grid-item-columns($grid-item-big-columns);
-      }
-      p {
-        @include media($medium-screen) {
-          max-width: 60%;
-        }  
-      }
-    }
-
-    .grid-item-image {
-      background: url(/images/lake-transparent.png);
-      background-color: $grid-item-background;
-      background-repeat: no-repeat;
-      background-position: top;
-      background-size: cover;
-    }
   }
