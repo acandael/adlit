@@ -28,8 +28,7 @@ div.hero {
 
   h1 {
     text-align: center;
-    font-size: $base-font-size * 1.6;
-    @inlude media($large-screen) {
+    @include media($large-screen) {
       font-size: $base-font-size * 3;
     }
     color: white;
