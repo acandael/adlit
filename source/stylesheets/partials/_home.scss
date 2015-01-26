@@ -28,6 +28,7 @@ div.hero {
 
   h1 {
     text-align: center;
+    font-size: $base-font-size * 1.6;
     @inlude media($large-screen) {
       font-size: $base-font-size * 3;
     }
