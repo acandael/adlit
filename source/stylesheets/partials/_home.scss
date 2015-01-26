@@ -11,28 +11,41 @@
 
 
 div.hero {
-  @include outer-container;
-  @include span-columns(8);
-  @include shift(2);
   position: absolute;
+  top: 20%;
+  margin-left: em(10);
+  margin-right: em(10);
+  @include media($large-screen) {
+    @include outer-container;
+    @include span-columns(8);
+    @include shift(2);
+    position: absolute;
+    top: 35%;
+    padding: 2em 3em;
+  }
   background: rgba(84,86,102,0.5);
-  padding: 2em 3em;
   border-radius: 5px;
-  top: 35%;
 
   h1 {
     text-align: center;
-    font-size: $base-font-size * 3;
+    @inlude media($large-screen) {
+      font-size: $base-font-size * 3;
+    }
     color: white;
   }
 }
 
 div.cta {
-  @include outer-container;
-  @include span-columns(8);
-  @include shift(5);
   position: absolute;
   top: 85%;
+  left: 25%;
+  @include media($large-screen) {
+    @include outer-container;
+    @include span-columns(8);
+    @include shift(5);
+    top: 85%;
+    left: 0;
+  }
 
   p {
     font-size: $base-font-size * 1.6;

@@ -1,0 +1,31 @@
+<header class="navigation" role="banner">
+  <div class="navigation-wrapper">
+    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+    <nav role="navigation">
+      <ul id="js-navigation-menu" class="navigation-menu show">
+        <li data-menuanchor="home" class="nav-link"><a href="#home">HOME</a></li>
+        <li data-menuanchor="news" class="nav-link"><a href="#news">NIEUWS</a></li>
+        <li class="nav-link"><a href="/team.html">TEAM</a></li>
+        <li data-menuanchor="info" class="nav-link"><a href="#info">PROJECT</a></li>
+        <li class="nav-link"><a href="/output.html" class="nav-link">OUTPUT</a></li>
+        <li class="nav-link lang"><i class="fa fa-flag"></i>EN</li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<script>
+  $(document).ready(function() {
+    var menuToggle = $('#js-mobile-menu').unbind();
+    $('#js-navigation-menu').removeClass("show");
+
+    menuToggle.on('click', function(e) {
+      e.preventDefault();
+      $('#js-navigation-menu').slideToggle(function(){
+        if($('#js-navigation-menu').is(':hidden')) {
+          $('#js-navigation-menu').removeAttr('style');
+        }
+      });
+    });
+  });
+</script>
