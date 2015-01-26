@@ -48,7 +48,7 @@ header.navigation {
   // Mobile view
 
   .navigation-menu-button {
-    color: $navigation-color;
+    color: $dark-gray;
     display: block;
     float: right;
     font-weight: 700;
@@ -63,7 +63,7 @@ header.navigation {
 
     &:focus,
     &:hover {
-      color: $navigation-color-hover;
+      color: $dark-gray;
     }
   }
 
