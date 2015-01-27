@@ -18,7 +18,9 @@ article {
 }
 
 header {
-  margin-bottom: em(40);
+  @include media($large-screen) {
+    margin-bottom: em(40);
+  }
 }
 
 // links
