@@ -32,7 +32,10 @@
       width: 100%;
       overflow: hidden;
       float: left;
-      padding: 2em;
+      padding: 1em;
+      @include media($large-screen) {
+        padding: 2em;
+      }
       border-top: 0;
       border-bottom: $grid-item-border-size solid $grid-items-background;
       border-left: $grid-item-border-size /2 solid $grid-items-background;
@@ -63,7 +66,9 @@
         display: block;
         height: 80%;
         margin: auto;
-        margin-bottom: 1em;
+        @include media($large-screen) {
+          margin-bottom: 1em;
+        }
       }
 
     .grid-item h1 {
