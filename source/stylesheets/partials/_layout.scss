@@ -1,9 +1,11 @@
 section {
   padding-top: em(70);
+  margin-left: em(20);
+  margin-right: em(20);
   @include media($large-screen) {
-  @include outer-container;
-  padding-top: em(140);
-  margin-bottom: em(80);
+    @include outer-container;
+    padding-top: em(140);
+    margin-bottom: em(80);
   }
 }
 
