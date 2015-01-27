@@ -1,15 +1,21 @@
 section.project {
 
   .intro {
-    @include span-columns(10);
-    @include shift(1);
+    @include media($large-screen) {
+      @include span-columns(10);
+      @include shift(1);
+    }
     p {
+      @include media($large-screen) {
       font-size: $base-font-size * 1.2;
+      }
     }
   }
 
   .video {
-    @include span-columns(10);
-    @include shift(1);
+    @include media($large-screen) {
+      @include span-columns(10);
+      @include shift(1);
+    }
   }
 }
