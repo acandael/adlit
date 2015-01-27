@@ -18,13 +18,16 @@
     $grid-item-columns: 4;
     $grid-item-big-columns: 8;
     $grid-item-color: white;
-    $grid-item-height: 14em;
+    $grid-item-height: 7em;
 
     @include clearfix;
       
     .grid-item {
       @include transition (all 0.2s ease-in-out);
       height: $grid-item-height;
+      @include media($large-screen) {
+        height: 14em;
+      }
       background: $grid-item-background;
       width: 100%;
       overflow: hidden;
