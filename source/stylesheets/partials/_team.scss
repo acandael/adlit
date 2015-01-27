@@ -1,12 +1,20 @@
 .members {
-  @include outer-container;
-  margin-top: em(40);
+  margin-left: em(10);
+  margin-right: em(10);
+  @include media($large-screen) {
+    @include outer-container;
+    margin-top: em(40);
+  }
 }
 
 .member {
-  @include span-columns(3 of 12);
-  @include omega(4n);
-  margin-bottom: em(60);
+  text-align: center;
+  margin-bottom: em(30);
+  @include media($large-screen) {
+    @include span-columns(3 of 12);
+    @include omega(4n);
+    margin-bottom: em(60);
+  }
   
   h2 {
     margin-top: em(20);
