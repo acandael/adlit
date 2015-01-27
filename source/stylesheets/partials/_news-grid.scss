@@ -66,6 +66,7 @@
         display: block;
         height: 80%;
         margin: auto;
+        margin-bottom: .4em;
         @include media($large-screen) {
           margin-bottom: 1em;
         }
@@ -73,16 +74,10 @@
 
     .grid-item h1 {
         color: $grid-item-color;
-        font-size: 1em;
-        margin-bottom: .4em;
-      }
-
-    .grid-item p {
-        margin: auto;
-        color: transparentize($grid-item-color, .3);
-        @include media($medium-screen) {
-          max-width: 70%;
+        font-size: .8em;
+        @include media($large-screen) {
+          margin-bottom: .4em;
+          font-size: 1em;
         }
       }
-
   }
