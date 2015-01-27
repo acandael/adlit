@@ -18,11 +18,11 @@ section.stakeholders {
 
   .box {
     @include media($large-screen) {
-    @include span-columns(3 of 6);
-    @include omega(2n);
+      @include span-columns(3 of 6);
+      @include omega(2n);
+      margin-right: em(40);
     }
     margin-bottom: em(80);
-    margin-right: em(40);
 
     a {
       &:hover {
