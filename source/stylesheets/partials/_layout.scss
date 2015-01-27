@@ -39,8 +39,11 @@ i {
   margin-right: em(10);
   &.large
   {
-    font-size: 3em;
-    margin-right: 0;
+    font-size: 2em;
+    @include media($large-screen) {
+      font-size: 3em;
+      margin-right: 0;
+    }
   }
 }
 
