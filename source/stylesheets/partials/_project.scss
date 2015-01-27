@@ -1,5 +1,7 @@
 section.project {
 
+  margin-bottom: em(40);
+
   .intro {
     @include media($large-screen) {
       @include span-columns(10);
@@ -17,5 +19,11 @@ section.project {
       @include span-columns(10);
       @include shift(1);
     }
+  }
+
+  .videocontent {
+	  width:80%;
+	  max-width: 840px;
+	  margin: 0 auto;
   }
 }
