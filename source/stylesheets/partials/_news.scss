@@ -1,8 +1,14 @@
 section.news {
 
+  margin-bottom: em(40);
+
   article.news-item {
 
-    @include span-columns(9 of 9);
+    margin-left: 0;
+
+    @include media($large-screen) {
+      @include span-columns(9 of 9);
+    }
 
     margin-top: em(40);
 
@@ -14,26 +20,36 @@ section.news {
 
     
     h1 {
-      font-size: $base-font-size * 1.3;
+      font-size: $base-font-size * 1;
+      @include media($large-screen) {
+        font-size: $base-font-size * 1.3;
+      }
       text-align: left;
       margin-bottom: em(5);
     }
 
     .content {
-      @include span-columns(6 of 9);
-      padding-left: 1em;
+      @include media($large-screen) {
+        @include span-columns(6 of 9);
+        padding-left: 1em;
+      }
     }
 
     aside {
-      @include span-columns(3 of 9);
-      float: left;
-      margin-right: em(20);
+      margin-bottom: em(20);
+      @include media($large-screen) {
+        @include span-columns(3 of 9);
+          float: left;
+          margin-right: em(20);
+      }
     }
   }
 
   .twitter {
-    @include span-columns(3);
     padding-left: em(10);
+    @include media($large-screen) {
+      @include span-columns(3);
+    }
 
     h2 {
       text-align: center;
@@ -43,8 +59,10 @@ section.news {
     }
 
     img {
+      @include media($large-screen) {
       float: left;
       margin-right: em(10);
+      }
     }
 
     p {

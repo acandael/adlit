@@ -19,7 +19,9 @@
     $tab-inactive-hover-color: silver;
     $tab-mode: $medium-screen;
 
-    @include span-columns(9);
+    @include media($large-screen) {
+      @include span-columns(9);
+    }
 
 
     @include clearfix;
