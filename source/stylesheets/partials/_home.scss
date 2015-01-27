@@ -59,7 +59,10 @@ div.cta {
     padding-top: em(20);
 
   .more-news {
+    @include media($large-screen) {
     text-align: right;
+    }
+    margin-left: em(10);
     margin-top: em(20);
   }
 }
