@@ -77,18 +77,17 @@ div.cta {
     margin-top: em(36);
     margin-left: em(24);
     margin-right: em(16);
-    margin-bottom: em(40);
+    margin-bottom: em(54);
     @include media($large-screen) {
       margin-top: 0;
     }
   }
 
   .box {
-    margin-bottom: em(20);
+    margin-bottom: em(54);
     @include media($large-screen) {
       @include span-columns(3 of 6);
       @include omega(2n);
-      margin-bottom: em(40);
     }
   }
 
