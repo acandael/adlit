@@ -84,10 +84,11 @@ div.cta {
   }
 
   .box {
-    margin-bottom: em(36);
+    margin-bottom: em(24);
     @include media($large-screen) {
       @include span-columns(3 of 6);
       @include omega(2n);
+      margin-bottom: em(36);
     }
   }
 
