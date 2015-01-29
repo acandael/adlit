@@ -37,6 +37,7 @@ header.navigation {
   width: 100%;
   z-index: 999;
   margin-bottom: 0;
+  margin-top: em(10);
 
   .navigation-wrapper {
     @include clearfix;
@@ -124,7 +125,7 @@ header.navigation {
     a {
       color: $navigation-color;
       display: inline-block;
-      font-weight: 400;
+      font-weight: 700;
 
       @include media ($horizontal-bar-mode) {
         padding-right: 1em;
