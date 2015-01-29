@@ -19,7 +19,7 @@ article {
 
 header {
   @include media($large-screen) {
-    margin-bottom: em(40);
+    margin-bottom: em(36);
   }
 }
 
