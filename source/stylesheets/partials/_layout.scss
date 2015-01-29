@@ -47,7 +47,7 @@ h1 {
 
 i {
   color: $light-green;
-  margin-right: em(10);
+  margin-right: em(16);
   &.large
   {
     font-size: 2em;
@@ -64,7 +64,7 @@ i {
   margin-bottom: em(81);
   }
   h1 {
-    margin-bottom: em(20);
+    margin-bottom: em(24);
   }
   p {
     @include media($large-screen) {
@@ -73,9 +73,13 @@ i {
   }
 
   header {
-    margin-bottom: em(20);
-    margin-left: em(20);
-    margin-right: em(10);
+    margin-bottom: em(24);
+    margin-left: em(24);
+    margin-right: em(16);
+    @include media($large-screen) {
+      margin-right: 0;
+      margin-left: 0;
+    }
   }
 }
 
