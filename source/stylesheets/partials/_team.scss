@@ -25,6 +25,10 @@
   }
 
   img {
+    margin-top: em(24);
+    @include media($large-screen) {
+      margin-top: 0;
+    }
     border: 2px solid white;
     border-radius: 3px;
     &:hover {
