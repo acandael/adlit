@@ -55,14 +55,14 @@ div.cta {
 
 .news-summary {
     @include outer-container;
-    padding-top: em(20);
+    padding-top: em(24);
 
   .more-news {
     @include media($large-screen) {
     text-align: right;
     }
-    margin-left: em(10);
-    margin-top: em(20);
+    margin-left: em(16);
+    margin-top: em(24);
   }
 }
 
@@ -74,9 +74,9 @@ div.cta {
   }
 
   .boxes {
-    margin-top: em(40);
-    margin-left: em(10);
-    margin-right: em(10);
+    margin-top: em(36);
+    margin-left: em(24);
+    margin-right: em(16);
     margin-bottom: em(40);
     @include media($large-screen) {
       margin-top: 0;
@@ -103,7 +103,12 @@ div.cta {
 
 
   p {
+    @include media($large-screen) {
       text-align: center;
+    }
+    &.icon {
+      text-align: center;
+    }
   }
 }
 
