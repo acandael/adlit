@@ -4,25 +4,18 @@ section.stakeholders {
   @include shift(2);
   }
 
-  header {
-    @include media($large-screen) {
-      margin-top: em(20);
-      padding-top: em(10);
-      padding-bottom: em(10);
-    }
-  }
 
   .boxes {
-    padding-top: em(40);
+    padding-top: em(36);
   }
 
   .box {
     @include media($large-screen) {
       @include span-columns(3 of 6);
       @include omega(2n);
-      margin-right: em(40);
+      margin-right: em(36);
     }
-    margin-bottom: em(80);
+    margin-bottom: em(81);
 
     a {
       &:hover {
@@ -34,7 +27,7 @@ section.stakeholders {
 
   h2 {
     text-align: center;
-    margin-bottom: em(15);
+    margin-bottom: em(24);
     font-size: $base-font-size * 1.3;
     @include media($large-screen) {
       font-size: $base-font-size * 1.6;
