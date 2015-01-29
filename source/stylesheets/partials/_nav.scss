@@ -37,7 +37,9 @@ header.navigation {
   width: 100%;
   z-index: 999;
   margin-bottom: 0;
-  margin-top: em(10);
+  @include media($large-screen) {
+    margin-top: em(16);
+  }
 
   .navigation-wrapper {
     @include clearfix;
