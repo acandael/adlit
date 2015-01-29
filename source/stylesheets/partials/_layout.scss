@@ -59,9 +59,9 @@ i {
 }
 
 .intro {
-  margin-bottom: em(60);
+  margin-bottom: em(54);
   @include media($large-screen) {
-  margin-bottom: em(100);
+  margin-bottom: em(81);
   }
   h1 {
     margin-bottom: em(20);
