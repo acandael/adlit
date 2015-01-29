@@ -13,6 +13,8 @@
 div.hero {
   position: absolute;
   top: 16%;
+  margin-left: em(16);
+  margin-right: em(16);
   @include media($large-screen) {
     @include outer-container;
     @include span-columns(8);
@@ -25,8 +27,7 @@ div.hero {
   border-radius: 5px;
 
   h1 {
-    text-align: center;
-    font-size: $base-font-size * 1.6;
+    font-size: $base-font-size * 1.3;
     @include media($large-screen) {
       font-size: $base-font-size * 3;
     }
