@@ -11,7 +11,7 @@ section {
 
 article {
   margin-left: em(24);
-  margin-right: em(24);
+  margin-right: em(16);
   @include media($large-screen) {
     @include outer-container;
   }
