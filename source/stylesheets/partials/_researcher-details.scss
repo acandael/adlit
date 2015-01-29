@@ -1,6 +1,6 @@
 article.researcher {
-  padding-top: em(20);
-  margin-bottom: em(40);
+  padding-top: em(24);
+  margin-bottom: em(36);
   @include media($large-screen) {
     @include span-columns(7);
     @include shift(3);
