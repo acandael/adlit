@@ -1,9 +1,9 @@
 article.news-article {
-  padding-top: em(70);
-  margin-bottom: em(40);
+  padding-top: em(54);
+  margin-bottom: em(36);
   @include media($large-screen) {
-    padding-top: em(140);
-    padding-bottom: em(60);
+    padding-top: em(121);
+    padding-bottom: em(54);
   }
 
   header {
@@ -24,11 +24,8 @@ article.news-article {
   }
 
   .extra {
-    margin-top: em(60);
+    margin-top: em(54);
 
-    li {
-      line-height: 2em;
-    }
     
     a {
       font-weight: 600;
@@ -36,8 +33,8 @@ article.news-article {
   }
 
   aside {
-    margin-top: em(20);
-    margin-bottom: em(20);
+    margin-top: em(24);
+    margin-bottom: em(24);
     @include media($large-screen) {
       @include span-columns(5);
       @include shift(7);
