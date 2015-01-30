@@ -23,6 +23,15 @@ div.hero {
     top: 24%;
     padding: 1.5em 2.4em;
   }
+
+  @include media($portrait-screen) {
+    @include outer-container;
+    @include span-columns(6);
+    @include shift(1);
+    position: absolute;
+    top: 24%;
+    padding: 1.5em 2.4em;
+  }
   background: rgba(84,86,102,0.5);
   border-radius: 5px;
 
@@ -43,6 +52,14 @@ div.cta {
     @include outer-container;
     @include span-columns(8);
     @include shift(5);
+    top: 85%;
+    left: 0;
+  }
+
+  @include media($portrait-screen) {
+    @include outer-container;
+    @include span-columns(8);
+    @include shift(3);
     top: 85%;
     left: 0;
   }
@@ -80,7 +97,7 @@ div.cta {
     @include shift(1);
   }
 
-  @include media($medium-screen) {
+  @include media($landscape-screen) {
     @include outer-container;
     @include span-columns(6);
   }
