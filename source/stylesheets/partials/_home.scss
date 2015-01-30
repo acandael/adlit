@@ -54,12 +54,19 @@ div.cta {
 }
 
 .news-summary {
-    @include outer-container;
     padding-top: em(24);
+    padding-left: em(16);
+    padding-right: em(16);
+
+  @include media($large-screen) {
+    @include outer-container;
+  }
+
 
   .more-news {
     @include media($large-screen) {
     text-align: right;
+    margin-right: em(16);
     }
     margin-left: em(16);
     margin-top: em(24);
