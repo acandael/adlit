@@ -7,6 +7,13 @@ section {
     padding-top: em(121);
     margin-bottom: em(81);
   }
+
+  @include media($landscape-screen) {
+    margin-left: em(24);
+    margin-right: em(24);
+  }
+
+  
 }
 
 article {

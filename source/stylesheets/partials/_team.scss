@@ -6,6 +6,12 @@
     @include omega(4n);
     margin-bottom: em(54);
   }
+
+  @include media($portrait-screen) {
+    @include span-columns (4 of 8);
+    @include omega(2n);
+  }
+  
   
   h2 {
     margin-top: em(24);
