@@ -24,6 +24,10 @@ div.hero {
     padding: 1.5em 2.4em;
   }
 
+  @include media($landscape-screen) {
+    padding: 1.5em;
+  }
+
   @include media($portrait-screen) {
     @include outer-container;
     @include span-columns(6);
@@ -39,6 +43,10 @@ div.hero {
     font-size: $base-font-size * 1.3;
     @include media($large-screen) {
       font-size: $base-font-size * 3;
+    }
+
+    @include media($landscape-screen) {
+      font-size: $base-font-size * 1.6;
     }
     color: white;
   }
