@@ -68,7 +68,10 @@ i {
 .intro {
   margin-bottom: em(54);
   @include media($large-screen) {
-  margin-bottom: em(81);
+    margin-bottom: em(81);
+  }
+  @include media($portrait-screen) {
+    padding-left: em(36);
   }
   h1 {
     margin-bottom: em(16);
