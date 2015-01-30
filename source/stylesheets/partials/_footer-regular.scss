@@ -2,7 +2,7 @@ footer.regular {
   text-align: center;
   @include media($large-screen) {
     @include span-columns(4);
-    @include shift(5);
+    @include shift(4);
   }
 
   @include media($landscape-screen) {
@@ -10,9 +10,8 @@ footer.regular {
   }
 
   @include media($portrait-screen) {
-    width: 100%;
-    clear: both;
-    @include shift(1);
+    @include span-columns(4);
+    @include shift(2);
   }
   padding-bottom: 40px;
 
