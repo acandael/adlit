@@ -21,6 +21,10 @@ article.news-article {
       @include span-columns(6);
       @include shift(-12);
     }
+
+    @include media($portrait-screen) {
+      @include span-columns(6);
+    }
   }
 
   .extra {
@@ -38,6 +42,10 @@ article.news-article {
     @include media($large-screen) {
       @include span-columns(5);
       @include shift(7);
+    }
+
+    @include media($landscape-screen) {
+      margin-top: 0;
     }
   }
 
