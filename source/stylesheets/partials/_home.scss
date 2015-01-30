@@ -92,6 +92,7 @@ div.cta {
 
 .info {
   @include media($large-screen) {
+    padding-top: em(24);
     @include outer-container;
     @include span-columns(6);
     @include shift(1);
@@ -108,7 +109,6 @@ div.cta {
     margin-right: em(16);
     margin-bottom: em(54);
     @include media($large-screen) {
-      margin-top: 0;
     }
   }
 
