@@ -73,6 +73,11 @@ div.cta {
     @include shift(1);
   }
 
+  @include media($medium-screen) {
+    @include outer-container;
+    @include span-columns(6);
+  }
+
   .boxes {
     margin-top: em(36);
     margin-left: em(24);
